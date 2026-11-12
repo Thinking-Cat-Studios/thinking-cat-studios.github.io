@@ -7,4 +7,5 @@ Legal and support pages for apps by Thinking Cat Studios.
 - [Terms of Service](https://thinking-cat-studios.github.io/redemzion/terms.html)
 - [Delete Account](https://thinking-cat-studios.github.io/redemzion/delete-account.html)
 
+
 Contact: thinkingcatstudios@gmail.com
