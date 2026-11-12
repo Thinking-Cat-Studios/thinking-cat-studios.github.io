@@ -1,30 +1,31 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Delete Your Account — R.arc</title><style>
-:root{color-scheme:light dark;--bg:#f5f3ef;--surface:#fff;--text:#211f1c;--muted:#625e59;--line:#dedad3;--link:#8e3d29;--accent:#f0e8e2}@media(prefers-color-scheme:dark){:root{--bg:#171615;--surface:#22201e;--text:#f2eee9;--muted:#b8b1a8;--line:#3a3632;--link:#f0a58e;--accent:#30231f}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:860px;margin:auto;padding:24px 20px 64px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:8px 0 22px;border-bottom:1px solid var(--line)}.brand{font-weight:750;text-decoration:none}nav{display:flex;gap:14px;flex-wrap:wrap}a{color:var(--link)}nav a{font-size:.94rem}.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,5vw,44px);margin-top:26px}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;letter-spacing:-.04em;margin:0 0 10px}h2{font-size:1.35rem;line-height:1.3;margin:2.2em 0 .55em}.lead,.meta,footer{color:var(--muted)}.meta{font-size:.92rem}.notice{background:var(--accent);padding:14px 16px;border-radius:12px}li{margin:.45em 0}footer{font-size:.9rem;padding:24px 4px}</style><style>
-:root{--bg:#000000;--surface:#0C0C0C;--text:#F5F5F2;--muted:#A3A3A0;--line:#232322;--link:#F5F5F2;--accent:#242422;--danger:#F5F5F2}@media(prefers-color-scheme:light){:root{--bg:#F4F4F1;--surface:#FFFFFF;--text:#161614;--muted:#5B5C56;--line:#DFDFD9;--link:#161614;--accent:#E6E6E0;--danger:#161614}}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}h1,h2{font-family:Newsreader,Georgia,serif}
-</style>
-</head><body><main>
-<header class="top"><a class="brand" href="privacy.html">R.arc</a><nav aria-label="Legal pages"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html" aria-current="page">Delete account</a></nav></header><article class="card">
-<h1>Delete your account</h1><p class="lead">How to remove your R.arc online account and what happens to your information.</p><p class="meta">Effective date: 10 November 2026 · Contact: <a href="mailto:thinkingcatstudios@gmail.com">thinkingcatstudios@gmail.com</a></p><p class="notice"><strong>Important:</strong> Using this web page does not erase the local records or avatar files stored on your device. In-app deletion clears those local copies after cloud deletion succeeds. It also cannot directly remove copies you exported or information retained in provider backups under their own retention practices.</p>
-<h2>Option 1: Delete in the app</h2><ol><li>Open R.arc and sign in to the account you want to delete.</li><li>Go to <strong>Settings → Storage</strong>.</li><li>Choose <strong>Delete account</strong> and review the confirmation prompt.</li><li>Confirm <strong>Delete account</strong>.</li></ol><p>The app first removes files under your account in its private avatar storage bucket. If that deletion fails, it stops and reports an error rather than continuing. If it succeeds, the app calls the account-deletion function; the authentication account and rows linked to it are deleted, then the app clears its local database and avatar files, signs out, and returns to the start screen.</p>
-<section class="delete-tool" aria-labelledby="delete-tool-title"><h2 id="delete-tool-title">Delete your online account on this page</h2><p>Enter the registered email address. We will send a one-time code to verify account access. After verification, this page removes the cloud avatar files and requests account deletion.</p><form id="request-code-form"><label for="delete-email">Registered email address</label><input id="delete-email" name="email" type="email" autocomplete="email" required><button type="submit">Send verification code</button></form><form id="confirm-delete-form" hidden><label for="delete-code">Six-digit email code</label><input id="delete-code" name="code" type="text" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" required><button class="danger-button" type="submit">Verify and delete account</button></form><p id="delete-status" role="status" aria-live="polite"></p></section>
-<h2>Delete from the app instead</h2><p>In the app, use <strong>Settings → Storage → Delete account</strong>. The in-app process also clears the app's local database and avatar files after cloud deletion succeeds. If you submit a request by email instead, write from your registered address to <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemption%20Arc%20account%20deletion">thinkingcatstudios@gmail.com</a>. Do not send your password or sign-in code. Email requests are handled manually after verification.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Delete Your Account — Redemzon</title>
+  
+  <link rel="stylesheet" href="site.css">
+</head><body class="legal"><main>
+<header class="top"><a class="brand" href="home.html"><img src="brand.png" alt="">Thinking Cat Studios</a><nav aria-label="Legal pages"><a href="home.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html" aria-current="page">Delete account</a><a href="contact.html">Contact</a></nav></header><article class="card">
+<h1>Delete your account</h1><p class="lead">How to remove your Redemzon online account and what happens to your information.</p><p class="meta">Effective date: 10 November 2026 · Contact: <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20account%20deletion%20question">thinkingcatstudios@gmail.com</a></p><p class="notice"><strong>Important:</strong> Web deletion removes your cloud account immediately. An installed Redemzon app clears that account's local database and avatar files the next time it opens, resumes, or reconnects to the internet. Until then, its local copy remains on the device. The web page cannot remove exports or provider backup copies.</p>
+<h2>Option 1: Delete in the app</h2><ol><li>Open Redemzon and sign in to the account you want to delete.</li><li>Go to <strong>Settings → Storage</strong>.</li><li>Choose <strong>Delete account</strong> and review the confirmation prompt.</li><li>Confirm <strong>Delete account</strong>.</li></ol><p>The app first removes files under your account in its private avatar storage bucket. If that deletion fails, it stops and reports an error rather than continuing. If it succeeds, the app calls the account-deletion function; the authentication account and rows linked to it are deleted, then the app clears its local database and avatar files, signs out, and returns to the start screen.</p>
+<section class="delete-tool" aria-labelledby="delete-tool-title"><h2 id="delete-tool-title">Delete your online account on this page</h2><p>Enter the registered email address. We will send a one-time code to verify account access. After verification, you will review a final confirmation before deletion.</p><form id="request-code-form"><label for="delete-email">Registered email address</label><input id="delete-email" name="email" type="email" autocomplete="email" required><button type="submit">Send verification code</button></form><form id="confirm-delete-form" hidden><label for="delete-code">Six-digit email code</label><input id="delete-code" name="code" type="text" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" required><button type="submit">Verify code</button></form><div id="final-confirmation" hidden><p><strong>Delete your account?</strong> This permanently deletes your cloud account, synced records, and cloud avatars. This cannot be undone. Any installed Redemzon app will erase this account's local data when it next connects to the internet; until then, that local copy remains on the device.</p><button id="delete-account-button" class="danger-button" type="button">Delete account</button><button id="cancel-delete-button" type="button">Cancel</button></div><p id="delete-status" role="status" aria-live="polite"></p></section>
+<h2>Delete from the app instead</h2><p>In the app, use <strong>Settings → Storage → Delete account</strong>. The in-app process also clears the app's local database and avatar files after cloud deletion succeeds. If you submit a request by email instead, write from your registered address to <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20account%20deletion%20request">thinkingcatstudios@gmail.com</a>. Do not send your password or sign-in code. Email requests are handled manually after verification.</p>
 <h2>What is deleted</h2><ul><li>Your Supabase authentication account.</li><li>Cloud database rows linked by cascading account ownership, including synced notes, diary entries, profile details, Alter Ego profiles, reward progress, and reward-claim records present in the current schema.</li><li>Objects under your account folder in the private <code>alter-ego-avatars</code> storage bucket, when the deletion request completes successfully.</li></ul>
-<h2>What is not deleted by this process</h2><ul><li>If you use the form on this web page, local records in the mobile app's device database, local avatar image files, drafts, settings, and notification schedules. Complete deletion in the app or clear app data separately to remove that device copy.</li><li>Copies you exported, shared, or otherwise saved outside the app.</li><li>Provider backup copies, which may remain for a period controlled by the provider. The app code does not define or verify a backup purge schedule.</li></ul>
-<h2>Timeline</h2><p>For an in-app request, deletion runs when you confirm. The app reports success only after cloud account deletion and local database/avatar cleanup both succeed. If cloud removal succeeds but device cleanup fails, the app reports that the cloud account is deleted and local cleanup needs attention. For this web form, cloud deletion runs immediately after verification and successful avatar-file removal; local app data must be removed separately. Email requests are processed after verification, but the product currently publishes no fixed maximum completion time. We cannot promise an exact backup-erasure date from the available provider configuration.</p>
-<h2>Need help?</h2><p>Contact Thinking Cat Studios at <a href="mailto:thinkingcatstudios@gmail.com">thinkingcatstudios@gmail.com</a>. See the <a href="privacy.html">Privacy Policy</a> for data practices and privacy requests, or the <a href="terms.html">Terms of Use</a>.</p>
-</article><footer>Thinking Cat Studios · India · <a href="mailto:thinkingcatstudios@gmail.com">thinkingcatstudios@gmail.com</a><br><nav aria-label="Legal pages"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></nav></footer></main>
-<style>
-:root{--bg:#000000;--surface:#0C0C0C;--text:#F5F5F2;--muted:#A3A3A0;--line:#232322;--link:#F5F5F2;--accent:#242422;--danger:#F5F5F2}@media(prefers-color-scheme:light){:root{--bg:#F4F4F1;--surface:#FFFFFF;--text:#161614;--muted:#5B5C56;--line:#DFDFD9;--link:#161614;--accent:#E6E6E0;--danger:#161614}}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}h1,h2{font-family:Newsreader,Georgia,serif}.delete-tool{margin:2em 0;padding:18px;background:var(--accent);border-radius:14px}.delete-tool label{display:block;font-weight:600;margin:12px 0 5px}.delete-tool input{width:100%;max-width:420px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font:inherit}.delete-tool button{display:block;margin-top:12px;padding:12px 16px;border:0;border-radius:10px;background:var(--text);color:var(--bg);font:inherit;font-weight:650;cursor:pointer}.delete-tool .danger-button{background:var(--danger);color:var(--bg)}.delete-tool [hidden]{display:none!important}#delete-status{min-height:1.5em;color:var(--muted)}
-</style>
+<h2>What is not deleted by this process</h2><ul><li>Copies you exported, shared, or otherwise saved outside the app.</li><li>Provider backup copies, which may remain for a period controlled by the provider. The app code does not define or verify a backup purge schedule.</li></ul>
+<h2>Timeline</h2><p>For an in-app request, deletion runs when you confirm. The app reports success only after cloud account deletion and local database/avatar cleanup both succeed. If cloud removal succeeds but device cleanup fails, the app reports that the cloud account is deleted and local cleanup needs attention. For this web form, cloud deletion starts after email verification and final confirmation, then removes avatar files and deletes the account. A minimal account-deletion notice lets an installed app detect the deletion and clear its local data the next time it opens, resumes, or reconnects. Until that online check succeeds, the local copy remains on the device. Email requests are processed after verification, but the product currently publishes no fixed maximum completion time. We cannot promise an exact backup-erasure date from the available provider configuration.</p>
+<h2>Need help?</h2><p>Contact Thinking Cat Studios at <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20deletion%20support">thinkingcatstudios@gmail.com</a>. See the <a href="privacy.html">Privacy Policy</a> for data practices and privacy requests, or the <a href="terms.html">Terms of Use</a>.</p>
+</article><footer>© 2026 Thinking Cat Studios · India<br>Thinking Cat Studios · India · <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20account%20deletion%20question">thinkingcatstudios@gmail.com</a><br><nav aria-label="Legal pages"><a href="home.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a> · <a href="contact.html">Contact</a></nav></footer></main>
+
 <script>
 (() => {
   const projectUrl = "https://vpomnblaydabdwqhouna.supabase.co";
   const anonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwb21uYmxheWRhYmR3cWhvdW5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM4Mzk0NzAsImV4cCI6MjEwOTQxNTQ3MH0.PyS61jskD7z5JKgt7SKNfMVA5bZ1q5iYEe5JMQ9WUlU";
   const requestForm = document.getElementById('request-code-form');
   const confirmForm = document.getElementById('confirm-delete-form');
+  const finalConfirmation = document.getElementById('final-confirmation');
+  const deleteButton = document.getElementById('delete-account-button');
+  const cancelButton = document.getElementById('cancel-delete-button');
   const status = document.getElementById('delete-status');
   let email = '';
+  let verifiedToken = '';
   const api = async (path, { token, method = 'GET', body } = {}) => {
     const response = await fetch(`${projectUrl}${path}`, {
       method,
@@ -38,6 +39,8 @@
   requestForm.addEventListener('submit', async (event) => {
     event.preventDefault();
     email = document.getElementById('delete-email').value.trim();
+    const button = requestForm.querySelector('button');
+    button.disabled = true;
     status.textContent = 'Sending a verification code…';
     try {
       await api('/auth/v1/otp', { method: 'POST', body: { email, create_user: false } });
@@ -45,6 +48,8 @@
       status.textContent = 'If this address belongs to an account, a verification code has been sent. Enter it here to continue.';
     } catch (error) {
       status.textContent = error instanceof TypeError ? 'Could not reach the account service. Check your connection and try again.' : error.message;
+    } finally {
+      button.disabled = false;
     }
   });
   const removeAvatarFiles = async (token, userId) => {
@@ -74,17 +79,41 @@
     status.textContent = 'Verifying your code…';
     try {
       const session = await api('/auth/v1/verify', { method: 'POST', body: { email, token: code, type: 'email' } });
-      const user = await api('/auth/v1/user', { token: session.access_token });
-      status.textContent = 'Removing cloud avatar files…';
-      await removeAvatarFiles(session.access_token, user.id);
-      status.textContent = 'Deleting the account…';
-      await api('/rest/v1/rpc/delete_account', { token: session.access_token, method: 'POST', body: {} });
-      requestForm.hidden = true;
+      await api('/auth/v1/user', { token: session.access_token });
+      verifiedToken = session.access_token;
       confirmForm.hidden = true;
-      status.textContent = 'Your online account and cloud data have been deleted. This web page cannot erase data already stored in the R.arc app on your device.';
+      finalConfirmation.hidden = false;
+      status.textContent = 'Email verified. Review the confirmation above to continue.';
+    } catch (error) {
+      status.textContent = error instanceof TypeError ? 'Could not reach the account service. Check your connection and try again.' : error.message;
+    } finally {
+      button.disabled = false;
+    }
+  });
+  cancelButton.addEventListener('click', () => {
+    verifiedToken = '';
+    finalConfirmation.hidden = true;
+    requestForm.hidden = false;
+    status.textContent = 'Deletion cancelled. Your account has not been deleted.';
+  });
+  deleteButton.addEventListener('click', async () => {
+    if (!verifiedToken) return;
+    const button = deleteButton;
+    button.disabled = true;
+    cancelButton.disabled = true;
+    requestForm.hidden = true;
+    status.textContent = 'Removing cloud avatar files…';
+    try {
+      const user = await api('/auth/v1/user', { token: verifiedToken });
+      await removeAvatarFiles(verifiedToken, user.id);
+      status.textContent = 'Deleting the account…';
+      await api('/rest/v1/rpc/delete_account', { token: verifiedToken, method: 'POST', body: {} });
+      verifiedToken = '';
+      status.textContent = 'Your online account and cloud data have been deleted. Any installed Redemzon app will clear this account’s local data the next time it opens, resumes, or reconnects to the internet. Until then, its local copy remains on the device.';
     } catch (error) {
       status.textContent = error instanceof TypeError ? 'Could not reach the account service. Check your connection. If cloud avatar removal succeeded but account deletion did not, contact support before retrying.' : `${error.message} If cloud avatar removal succeeded but account deletion did not, contact support before retrying.`;
       button.disabled = false;
+      cancelButton.disabled = false;
     }
   });
 })();
