@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy — Redemzon</title>
+  
+
+  
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="legal"><main>
+  <header class="top"><a class="brand" href="home.html"><img src="brand.png" alt="">Thinking Cat Studios</a><nav aria-label="Legal pages"><a href="home.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a><a href="contact.html">Contact</a></nav></header>
+  <article class="card">
+    <h1>Privacy Policy</h1><p class="lead">How Redemzon handles information when you use the app.</p>
+    <p class="meta">Effective date: 10 November 2026 · Operated by Thinking Cat Studios, an individual developer operating from India.</p>
+    <p>Redemzon is not currently available worldwide. For questions, privacy requests, or availability updates: <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20privacy%20inquiry">thinkingcatstudios@gmail.com</a>.</p>
+    <p class="notice"><strong>In short:</strong> The app saves your journal and other records on your device. If you choose online storage, selected records and account details are sent to Supabase for account and sync features. Cloud data is encrypted in transit and at rest, but it is <strong>not end-to-end encrypted</strong>; the service provider can process it to provide the service.</p>
+
+    <h2>Information the app handles</h2>
+    <h3>Information stored on your device</h3>
+    <p>The local database can contain your notes, diary entries, positive and mistake reflections, stories, goals, tasks and reminders, events, links, tags, focus sessions, Alter Ego profiles and progress, Reality Check history, preferences, drafts, notification schedules, and timestamps recording your sync consent and 18+ declaration. These records may contain personal or sensitive details you choose to write. A selected Alter Ego avatar is stored as an image in the app's private files. The app also stores settings, app-lock information, and account session credentials locally; the database is configured to use SQLCipher in production, while credentials and its key use the device secure-storage facility.</p>
+    <p>Notifications are scheduled locally on your device. Notification title or body can be composed from your records (for example a task reminder); the app does not send these schedules to a notification server.</p>
+    <h3>Information synced to your account</h3>
+    <p>When sync is enabled and you sign in, the app syncs quick notes and diary entries, including their text or rich content, dates, titles, mood where applicable, archive/deletion timestamps, and links to other notes. It also syncs app preferences, daily Reality Check notes and items, Alter Ego profile details, daily reward progress, claims, and unlocked cosmetics. The account profile stores your email, any display name the sign-in provider supplies, and timestamps recording sync consent and the 18+ declaration. Choosing an image avatar while online uploads a resized JPEG to the private <code>alter-ego-avatars</code> storage bucket.</p>
+    <p>Supabase Auth processes the email address and authentication information needed for email/password, email-code, Google, or Apple sign-in. A profile row may store your email address and display name supplied by the sign-in provider. Authentication tokens are stored on your device. Sign-in providers process information under their own terms when you use them.</p>
+    <p>Other app records such as goals, tasks, focus sessions, events, and stories are stored locally by the current app code and are not part of its current cloud-sync implementation. Do not assume those records are backed up to your account.</p>
+
+    <h2>Services and recipients</h2>
+    <ul class="list"><li><strong>Supabase</strong> provides authentication, PostgreSQL database hosting, and private object storage for online mode.</li><li><strong>Google</strong> or <strong>Apple</strong> receives information when you choose its sign-in option and returns authentication details to the app/Supabase.</li><li><strong>Supabase Auth email delivery:</strong> the project setup notes identify Brevo as the configured SMTP provider for verification and recovery emails. That SMTP configuration is managed outside the app code and should be confirmed by the operator.</li></ul>
+    <p>The app code contains no analytics, advertising, crash-reporting, or payment SDK. The project does not sell personal data, show ads, or use your content to train AI. Device operating systems and the app stores may separately process information under their own terms.</p>
+
+    <h2>Why we use information and legal grounds</h2>
+    <p>Information is used to save and display the records you enter, provide local reminders, maintain app security, authenticate your account, sync the features you choose, and respond to support or privacy requests. For users in the European Economic Area or United Kingdom, the intended legal grounds are performance of the requested service/account relationship for account and sync functions, your consent where a feature is optional and asks you to enable it (such as choosing online storage, notifications, or an avatar/photo permission), and legal obligation where processing is required by law. We do not rely on a separate analytics or advertising purpose.</p>
+    <p>For India, online processing is based on your choice to create/use an account and enable online sync, with the notices and choices required by applicable data-protection law. The app asks you to tick an unticked sync-consent checkbox at account creation or first sync. The timestamp is stored on the device and in your Supabase profile. See <a href="#choices">your choices</a>.</p>
+
+    <h2 id="choices">Your choices and sync</h2>
+    <p>At setup you can choose “Local only” or “Online with login.” You can switch modes later in Settings → Storage. Online sync is optional and stays off until enabled. The app requires an unticked checkbox agreeing to sync notes and diary online at signup or first sync; it stores the consent timestamp locally and in your profile. When local records exist, the app also asks you to confirm before uploading those existing notes. Turning sync off stops background uploads and downloads while keeping the device copy; information already stored in your online account remains there until you delete that account. Online sync is not end-to-end encrypted.</p>
+    <p>The migrations recreate the account-scoped <code>settings</code> and <code>daily_checks</code> tables after an earlier migration removes their initial versions. The checked-in migrations enable row-level security and account ownership policies for these tables.</p>
+
+    <h2>Where information is stored</h2>
+    <p>Local information stays in app storage on your device. Online information is stored by Supabase in the region selected for the project; the repository does not establish or verify that region. Providers may process information in other countries as part of hosting, authentication, email delivery, or support. When data leaves your country, local transfer and privacy rules may apply. Contact us for current provider and hosting-region details.</p>
+
+    <h2>Security</h2>
+    <p>App-to-service traffic uses HTTPS through the Supabase client. The project is configured for encrypted database storage at rest, and the avatar bucket is private with account-scoped access policies. The device database is configured for SQLCipher in production and its key is held in secure storage. Cloud content is not end-to-end encrypted, so Supabase can process it. No method of storage or transmission is completely secure.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Local records remain on the device until you delete them or remove app data/uninstall. In-app account deletion removes cloud avatar objects, then the account and its cascading rows, and after successful cloud deletion clears the app database, local avatar files, and session. The web deletion form removes cloud data immediately. An installed app checks for a deletion notice when it opens, resumes, or reconnects and then clears the deleted account's local database and avatar files. Until that check succeeds, the local copy remains on the device. A minimal account ID notice is retained until an installed app acknowledges deletion. The implementation does not define a backup-retention period for provider backups; residual backup copies may persist under provider retention practices. We cannot state a fixed purge period from the app code.</p>
+    <section id="delete-account"><h2>Delete your account</h2><p>In the app, open Settings → Storage → Delete account and confirm. This removes the online account, cloud data and avatars, then clears the app's local database and avatar files when the operation completes successfully. You can also use the verification form on the <a href="delete-account.html">account deletion page</a>; web deletion removes cloud data immediately; an installed app clears its local copy on its next online check. Until then, its local copy remains on the device. Email requests to <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20account%20deletion%20request">thinkingcatstudios@gmail.com</a> from the registered address are handled manually after verification; no fixed deadline is published.</p></section>
+
+    <h2>Your privacy rights</h2>
+    <p>Depending on where you live and applicable law, you may request access to or correction/deletion of account information, withdraw consent for optional processing, object to or restrict certain processing, request a portable copy, or complain to a supervisory authority. India’s Digital Personal Data Protection Act provides rights including access to information about personal data, correction/completion/updating, erasure (subject to legal retention), grievance redressal, and nomination, as applicable. GDPR rights may include access, rectification, erasure, restriction, portability, objection, and withdrawal of consent where consent is the basis. To make a request, email <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20privacy%20inquiry">thinkingcatstudios@gmail.com</a> from your registered address and describe the request. We may need to verify identity. You may also contact your local data-protection authority where applicable.</p>
+    <p><strong>Grievance contact:</strong> Thinking Cat Studios, <a href="mailto:thinkingcatstudios@gmail.com?subject=Redemzon%20grievance">thinkingcatstudios@gmail.com</a>. This is the contact point for privacy questions and grievances.</p>
+
+    <h2>Android permissions and device features</h2>
+    <p>The Android build declares internet access, notifications, boot-completed delivery to restore scheduled local reminders, exact alarms, vibration, biometric/fingerprint unlock, foreground service access for the user-started focus timer, and legacy read/write external-storage permissions on Android versions up to 32. Photo-library access is requested when you choose an avatar. The manifest removes audio-recording permission. The app code does not request location or contacts access. Permissions can vary with Android version and build.</p>
+
+    <h2>Adults only</h2>
+    <p>Redemzon is intended only for people aged 18 or older. Account creation asks users to confirm they are at least 18; this is a self-declaration, not identity or age-document verification. We do not knowingly seek information from children. If you believe a child has provided information, contact us so we can review and delete associated account data where appropriate.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may revise this policy when the app or its data practices change. The effective date above will be updated. Material updates should be reviewed before continuing to use online features. The current app does not implement a dedicated policy-change notification mechanism.</p>
+  </article>
+  </main>
+  <footer class="footer"><div class="wrap footer-row"><a class="foot-brand" href="home.html"><img src="brand.png" alt="">Thinking Cat Studios</a><div>© 2026 Thinking Cat Studios · India</div><nav class="footer-links" aria-label="Policies and support"><a href="home.html">Home</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a><a href="contact.html">Contact</a></nav></div></footer></body></html>
