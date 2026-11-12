@@ -48,6 +48,8 @@ body.legal { min-height: 100vh; background: var(--bg); color: var(--text); }
 .legal code { overflow-wrap: anywhere; color: var(--text); }
 .legal footer { padding: 26px 4px 8px; color: var(--muted); font-size: .9rem; }
 .legal footer nav { margin-top: 8px; }
+.legal footer.footer { padding: 28px 0 42px; }
+.legal footer.footer nav { margin-top: 0; }
 
 .legal .contact-card, .legal .delete-tool { margin: 18px 0; padding: clamp(18px, 3vw, 26px); border: 1px solid var(--line); border-radius: 18px; background: var(--surface-raised); }
 .legal .contact-card h2 { margin: 0 0 8px; }
